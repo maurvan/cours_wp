@@ -1,0 +1,102 @@
+@import 'variables'; // importer les variables couleurs
+
+// sass --watch scss:dist
+// pour compiler le sass en css
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    background-color: $bleuclair;
+}
+
+.nav-container {
+    width: 100%;
+    display: flex;
+    background-color: $blanc;
+    box-shadow: 0 2px 2px 0 rgb(0 0 0 / 14%), 0 3px 1px -2px rgb(0 0 0 / 12%), 0 1px 5px 0 rgb(0 0 0 / 20%);
+    z-index: 1;
+    justify-content: center;
+
+    #logo {
+        list-style-type: none;
+        margin: 0 20px;
+        padding: 0;
+
+        a {
+            display: block;
+            line-height: 0;
+            margin-top: 15px;
+        }
+    }
+
+    #main-menu {
+        list-style: none;
+        padding: 0;
+        margin: 0;
+        display: flex;
+
+        > li {
+            height: 70px;
+
+            &.current-menu-item {
+                a {
+                    color: $orange;
+                }
+                a:after {
+                    width: 100%;
+                    background-color: $orange;
+                }
+            }
+
+            > a {
+                height: 100%;
+                display: flex;
+                padding: 0 20px;
+                text-decoration: none;
+                align-items: center;
+                justify-content: center;
+                font-size: 15px;
+                font-weight: bold;
+                text-transform: uppercase;
+                color: $bleufonce;
+                font-family: 'Amboy', sans-serif;
+                position: relative;
+
+                &:last-child {
+                    float: right;
+                }
+
+                &:after {
+                    content: '';
+                    transition: all ease 0.3s;
+                    position: absolute;
+                    width: 0;
+                    background-color: $bleuclair;
+                    height: 5px;
+                    bottom: 0;
+                }
+
+                &:hover {
+                    background-color: $gris;
+
+                    &:after {
+                        width: 100%;
+                    }
+                }
+            }
+        }
+    }
+}
+
+.container {
+    width: 70%;
+    background-color: $blanc;
+    margin: auto;
+    z-index: 0;
+    position: relative;
+    padding: 15px;
+}

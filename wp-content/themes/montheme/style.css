@@ -1,0 +1,15 @@
+/* 
+Theme Name: Mon Theme
+Author: Maureen VANHOREN
+Description: Mon premier theme, crée dans le cadre du cours de WordPress
+Version: 1.0
+*/
+
+/* ATTENTION, le premier commentaire ↑ sera interprêté
+Le seul obligatoire est le "Theme Name" */
+
+/* Pour la configuration de mon theme
+Les 3 fichiers indispensables: functions.php, index.php et style.css */
+
+/* On importe les differents CSS */
+@import url('assets/dist/header.css');

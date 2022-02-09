@@ -1,0 +1,72 @@
+@import 'variables';
+
+.projects-container {
+    display: flex;
+    width: 100%;
+}
+
+.projects-main {
+    width: 75%;
+
+    h2 {
+        color: $orange;
+        font-family: 'Amboy';
+        font-size: 2.92rem;
+        line-height: 110%;
+    }
+
+    h3 {
+        color: $bleufonce;
+        font-family: 'Futura';
+    }
+    
+    h4 {
+        font-family: 'Amboy';
+        color: $bleufonce;
+    }
+}
+
+.side-related {
+    width: 25%;
+    margin-left: 15px;
+
+    a {
+        text-decoration: none;
+        color: $bleufonce;
+    }
+
+    h3 {
+        font-family: 'Futura';
+    }
+
+    .card-side {
+        border: 1px solid $bleufonce;
+        border-radius: 0.25rem;
+        margin: 15px 0px;
+
+        .card-text {
+            padding: 10px;
+
+            .card-title {
+                font-weight: bold;
+                text-transform: uppercase;
+                font-family: 'Futura';
+            }
+        }
+
+        p {
+            text-align: justify;
+            font-size: 0.7rem;
+        }
+
+        img {
+            width: 100%;
+            object-fit: cover;
+        }
+    }
+}
+
+p, ul li {
+    font-family: 'Futura';
+    color: $bleufonce;
+}

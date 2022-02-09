@@ -1,0 +1,62 @@
+.projects-container {
+  display: flex;
+  width: 100%;
+}
+
+.projects-main {
+  width: 75%;
+}
+.projects-main h2 {
+  color: #F1951B;
+  font-family: "Amboy";
+  font-size: 2.92rem;
+  line-height: 110%;
+}
+.projects-main h3 {
+  color: #0B3B55;
+  font-family: "Futura";
+}
+.projects-main h4 {
+  font-family: "Amboy";
+  color: #0B3B55;
+}
+
+.side-related {
+  width: 25%;
+  margin-left: 15px;
+}
+.side-related a {
+  text-decoration: none;
+  color: #0B3B55;
+}
+.side-related h3 {
+  font-family: "Futura";
+}
+.side-related .card-side {
+  border: 1px solid #0B3B55;
+  border-radius: 0.25rem;
+  margin: 15px 0px;
+}
+.side-related .card-side .card-text {
+  padding: 10px;
+}
+.side-related .card-side .card-text .card-title {
+  font-weight: bold;
+  text-transform: uppercase;
+  font-family: "Futura";
+}
+.side-related .card-side p {
+  text-align: justify;
+  font-size: 0.7rem;
+}
+.side-related .card-side img {
+  width: 100%;
+  object-fit: cover;
+}
+
+p, ul li {
+  font-family: "Futura";
+  color: #0B3B55;
+}
+
+/*# sourceMappingURL=single.css.map */
